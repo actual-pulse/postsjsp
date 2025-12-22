@@ -1,0 +1,26 @@
+python -m venv venv
+source venv/bin/activate   # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+python app.py
+
+GIT COMMANDS:
+
+…or create a new repository on the command line
+    echo "# postsjsp" >> README.md
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git branch -M main
+    git remote add origin https://github.com/actual-pulse/postsjsp.git
+    git push -u origin main
+
+…or push an existing repository from the command line
+    git remote add origin https://github.com/actual-pulse/postsjsp.git
+    git branch -M main
+    git push -u origin main
+
+…Push after code changes
+    git add .
+    git commit -m "first commit"
+    git branch -M main
+    git push -u origin main
