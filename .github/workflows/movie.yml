@@ -28,7 +28,7 @@ jobs:
           API_SECRET: ${{ secrets.API_SECRET }}
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
-        run: python posts/movie.py
+        run: python src/movie.py
 
       - name: Save state
         run: |
