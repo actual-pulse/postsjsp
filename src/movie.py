@@ -106,7 +106,7 @@ if days_left > 0:
         "{days_left} days left for dance steps that will trend worldwide {emoji}",
         "When Ram Charan moves, the world watches — {days_left} days to go {emoji}",
         "{days_left} days until the internet replays every step {emoji}",
-        "{days_left} days until another chartbuster takes over {emoji}",
+        "{days_left} days left {emoji}",
         "In {days_left} days, expect songs that shake the internet {emoji}",
         "{days_left} days left for music that trends everywhere {emoji}",
         "Blockbuster vibes loading — {days_left} days to go {emoji}",
