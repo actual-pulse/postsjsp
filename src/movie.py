@@ -4,7 +4,6 @@ import random
 from datetime import date, datetime
 import sys
 
-
 today = date.today().isoformat()
 
 # posts.py is inside /posts
@@ -22,9 +21,9 @@ with open(last_run_path, "r") as t:
     last_run = t.read().strip()
 
 # Stop if already ran today
-if last_run == today:
-    print("Already ran today. Exiting.")
-    sys.exit(0)
+# if last_run == today:
+#     print("Already ran today. Exiting.")
+#     sys.exit(0)
 
 # Read current day's counter
 with open(counter_path, "r") as f:
