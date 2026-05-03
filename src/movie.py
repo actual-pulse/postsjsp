@@ -49,45 +49,45 @@ if days_left > 0:
     EMOJIS = ["🔥", "✨", "🎬", "🚀", "🎉", "⏳", "💥", "👍"]
 
     TEMPLATES = [
-        # --------------------
-        # Countdown (General)
-        # --------------------
-        "Only {days_left} days to witness the storm of Peddi {emoji}",
-        "{days_left} days left for Peddi to roar on the big screen {emoji}",
-        "The countdown tightens — just {days_left} days to Peddi {emoji}",
-        "{days_left} days until Peddi takes over theatres {emoji}",
-        "Mark the date. {days_left} days left for Peddi {emoji}",
-        "The wait gets intense. {days_left} days remaining for Peddi {emoji}",
-        "{days_left} days more for Peddi madness to begin {emoji}",
-        "Not too far — {days_left} days to Peddi {emoji}",
-        "{days_left} days until screens ignite with Peddi {emoji}",
-        "The final stretch begins. {days_left} days to Peddi {emoji}",
-        # --------------------
-        # Mass Elevation Style
-        # --------------------
-        "{days_left} days for the rise of Peddi {emoji}",
-        "Brace yourselves. Peddi arrives in {days_left} days {emoji}",
-        "{days_left} days until the storm called Peddi hits {emoji}",
-        "{days_left} days for the ultimate celebration — Peddi {emoji}",
-        "{days_left} days until Peddi creates history {emoji}",
-        # --------------------
-        # Flexible (auto works for 0 or negative)
-        # --------------------
-        "In {days_left} days, Ram Charan unleashes a never-seen-before avatar 🔥",
-        "{days_left} days to witness the raw mass transformation of Peddi 💥",
-        "Rugged. Intense. Unstoppable. {days_left} days to Peddi ⚡",
-        "{days_left} days until Ram Charan’s most powerful role hits the screen 🔥",
-        "A storm is coming — {days_left} days to Peddi 🌪️",
-        "{days_left} days until screens tremble with Peddi’s intensity 💣",
-        "Mass elevation guaranteed — {days_left} days to go 🚀",
-        "{days_left} days until Ram Charan redefines mass cinema 👊",
-        "Brace yourself — Peddi mania begins in {days_left} days 🔥",
-        "{days_left} days until every frame screams power and attitude ⚡",
-        "Not just a film, it’s a phenomenon — {days_left} days to Peddi 🌟",
-        "{days_left} days until the next big cinematic explosion 💥",
-        "Rough. Raw. Real. {days_left} days to witness Peddi 🔥",
-        "{days_left} days to experience Ram Charan like never before 👊",
-        "The countdown to madness begins — {days_left} days to Peddi 🚨",
+      # --------------------
+      # Countdown (General)
+      # --------------------
+      "Only {days_left} days to witness the storm of Peddi {emoji}",
+      "{days_left} days left for Peddi to roar on the big screen {emoji}",
+      "The countdown tightens — just {days_left} days to Peddi {emoji}",
+      "{days_left} days until Peddi takes over theatres {emoji}",
+      "Mark the date. {days_left} days left for Peddi {emoji}",
+      "The wait gets intense. {days_left} days remaining for Peddi {emoji}",
+      "{days_left} days more for Peddi madness to begin {emoji}",
+      "Not too far — {days_left} days to Peddi {emoji}",
+      "{days_left} days until screens ignite with Peddi {emoji}",
+      "The final stretch begins. {days_left} days to Peddi {emoji}",
+      # --------------------
+      # Mass Elevation Style
+      # --------------------
+      "{days_left} days for the rise of Peddi {emoji}",
+      "Brace yourselves. Peddi arrives in {days_left} days {emoji}",
+      "{days_left} days until the storm called Peddi hits {emoji}",
+      "{days_left} days for the ultimate celebration — Peddi {emoji}",
+      "{days_left} days until Peddi creates history {emoji}",
+      # --------------------
+      # Flexible (auto works for 0 or negative)
+      # --------------------
+      "In {days_left} days, Ram Charan unleashes a never-seen-before avatar 🔥",
+      "{days_left} days to witness the raw mass transformation of Peddi 💥",
+      "Rugged. Intense. Unstoppable. {days_left} days to Peddi ⚡",
+      "{days_left} days until Ram Charan’s most powerful role hits the screen 🔥",
+      "A storm is coming — {days_left} days to Peddi 🌪️",
+      "{days_left} days until screens tremble with Peddi’s intensity 💣",
+      "Mass elevation guaranteed — {days_left} days to go 🚀",
+      "{days_left} days until Ram Charan redefines mass cinema 👊",
+      "Brace yourself — Peddi mania begins in {days_left} days 🔥",
+      "{days_left} days until every frame screams power and attitude ⚡",
+      "Not just a film, it’s a phenomenon — {days_left} days to Peddi 🌟",
+      "{days_left} days until the next big cinematic explosion 💥",
+      "Rough. Raw. Real. {days_left} days to witness Peddi 🔥",
+      "{days_left} days to experience Ram Charan like never before 👊",
+      "The countdown to madness begins — {days_left} days to Peddi 🚨",
     ]
 
     HASHTAGS = ["#PEDDI 🔥"]
