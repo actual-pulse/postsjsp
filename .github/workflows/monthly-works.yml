@@ -1,0 +1,54 @@
+name: X-JSP-MONTHLY-WORKS
+
+on:
+  schedule:
+    - cron: "0 3 10 * *"    # Tweet 1/5 - infrastructure and roads
+    - cron: "0 7 10 * *"    # Tweet 2/5 - welfare and social schemes
+    - cron: "0 11 10 * *"   # Tweet 3/5 - youth, education and employment
+    - cron: "0 15 10 * *"   # Tweet 4/5 - agriculture and farmer welfare
+    - cron: "0 19 10 * *"   # Tweet 5/5 - appreciation message
+  workflow_dispatch:
+    inputs:
+      tweet_number:
+        description: "Tweet number to post (1-5)"
+        required: true
+        default: "1"
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Resolve tweet number from trigger
+        id: tweetnum
+        run: |
+          case "${{ github.event.schedule }}" in
+            "0 3 10 * *")  echo "num=1" >> "$GITHUB_OUTPUT" ;;
+            "0 7 10 * *")  echo "num=2" >> "$GITHUB_OUTPUT" ;;
+            "0 11 10 * *") echo "num=3" >> "$GITHUB_OUTPUT" ;;
+            "0 15 10 * *") echo "num=4" >> "$GITHUB_OUTPUT" ;;
+            "0 19 10 * *") echo "num=5" >> "$GITHUB_OUTPUT" ;;
+            *) echo "num=${{ github.event.inputs.tweet_number }}" >> "$GITHUB_OUTPUT" ;;
+          esac
+
+      - name: Run monthly bot
+        env:
+          PYTHONIOENCODING: utf-8
+          API_KEY: ${{ secrets.API_KEY }}
+          API_SECRET: ${{ secrets.API_SECRET }}
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          TWEET_NUMBER: ${{ steps.tweetnum.outputs.num }}
+        run: python monthly_app.py

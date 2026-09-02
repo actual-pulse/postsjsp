@@ -2,7 +2,9 @@ name: X-JSP-POST
 
 on:
   schedule:
-    - cron: "0 3 * * *"   # Runs daily at 03:00 UTC
+    # Runs daily at 03:00 UTC, except the 10th, which is covered by the
+    # separate monthly-works.yml workflow (5 posts that day).
+    - cron: "0 3 1-9,11-31 * *"
   workflow_dispatch:
 
 jobs:
