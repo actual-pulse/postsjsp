@@ -38,5 +38,9 @@ jobs:
           git config user.name "github-bot"
           git config user.email "bot@github.com"
           git add parameters/dailyjsp/last_run.txt
-          git commit -m "Increment counter"
-          git push
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Increment counter"
+            git push
+          fi
